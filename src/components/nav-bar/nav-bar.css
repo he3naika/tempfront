@@ -1,0 +1,45 @@
+.NavBar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.NavBar .Button{
+  margin: 0px 5px;
+}
+
+.NavBar__label{
+  width: 35px;
+  height: 90px;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 5px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.NavBar__label p{
+  margin: 5px;
+}
+
+.NavBar__label_color_green{
+  color: #799c48;
+}
+.NavBar__label_color_blue{
+  color: #1a85b3;
+}
+.NavBar__label_color_orange{
+  color: #ff8201 ;
+}
+.NavBar__label_color_purple{
+  color: #883398;
+}
+.NavBar__label_color_red{
+  transform: translateY(15px);
+  color: #bc005e;
+}
+.NavBar__label_color_grey{
+  color: #9f9f9f;
+}

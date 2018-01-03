@@ -1,0 +1,174 @@
+/* LAYOUT */
+.layout__container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+  border-radius: 15px;
+  position: relative;
+}
+.layout__content{
+  display: flex;
+  flex-direction: column;
+  min-width: 600px;
+  min-height: 600px;
+  background-color: #464646;
+  position: relative;
+  justify-content: space-between;
+  border-radius: 0 15px 15px 0;
+}
+.layout__content_theme_info,
+.layout__content_theme_meters,
+.layout__content_theme_premises,
+.layout__content_theme_invoices{
+  width: 1095px;
+  padding: 140px 50px 20px 50px;
+  box-sizing: border-box;
+}
+
+.layout__content_theme_login,
+.layout__content_theme_changePassword,
+.layout__content_theme_resetPassword {
+  display: flex;
+  align-items: center;
+  padding: 70px 50px 20px 50px;
+  box-sizing: border-box;
+}
+
+.layout__account-name{
+  position: absolute;
+  top: 70px;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: bold;
+}
+  
+.layout__navbar{
+  display: flex;
+  justify-content: flex-end;
+  height: 80px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #7f7f7f;
+  width: 100%;
+}
+.layout__content_theme_resetPassword .layout__navbar{
+  display: none;
+}
+
+/* SIDE BAR */
+.layout__sidebar{
+  width: 300px;
+  min-height: 600px;
+  border-radius: 15px 0 0 15px;
+}
+.layout__sidebar_theme_info{
+  background-color: #799c48;
+}
+
+.layout__sidebar_theme_login,
+.layout__sidebar_theme_changePassword,
+.layout__sidebar_theme_resetPassword{
+  display: flex;
+  width: 395px;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+  color: #ffffff;
+  box-sizing: border-box;
+  background-color: #ff8201;
+}
+
+.layout__sidebar_theme_meters {
+  background-color: #ff8201;
+}
+.layout__sidebar_theme_premises{
+  background-color: #1a85b3;
+}
+.layout__sidebar_theme_invoices{
+  background-color: #883398;
+}
+.layout__sidebar_theme_info,
+.layout__sidebar_theme_meters,
+.layout__sidebar_theme_premises,
+.layout__sidebar_theme_invoices{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+  min-height: 760px;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+.layout__sidebar__header{
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 45px;
+}
+.layout__sidebar__description{
+  width: 60%;
+  padding: 20px 0px 40px 0px;
+  box-sizing: border-box;
+  font-size: 20px;
+  line-height: 28px;
+}
+.layout__content_theme_resetPassword .layout__navbar{
+  display: none;
+}
+.layout__content_theme_login .layout__navbar{
+  display: none;
+}
+.layout__sidebar_theme_login .layout__sidebar__header,
+.layout__sidebar_theme_resetPassword .layout__sidebar__header,
+.layout__sidebar_theme_changePassword .layout__sidebar__header{
+  width: 240px;
+}
+.layout__sidebar_theme_resetPassword .layout__sidebar__description,
+.layout__sidebar_theme_changePassword .layout__sidebar__description{
+  width: 310px;
+}
+.layout__sidebar_theme_login .layout__sidebar__description{
+  margin-bottom: 84px;
+}
+
+.spinner__container{
+  position: absolute;
+  left: calc(50% - 60px);
+  top: calc(50% - 90px);
+}
+
+@media screen and (max-width: 1394px){
+  .layout__container{
+    flex-direction: column;
+  }
+
+  .layout__sidebar{
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .layout__sidebar__description{
+    width: auto;
+    padding: 20px 0px 40px 0px;
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .layout__content{
+    border-radius: 0 0 15px 15px;
+  }
+
+  .layout__sidebar_theme_info,
+  .layout__sidebar_theme_meters,
+  .layout__sidebar_theme_premises,
+  .layout__sidebar_theme_invoices{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    min-height: auto;
+  }
+}

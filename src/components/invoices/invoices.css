@@ -1,0 +1,22 @@
+.invoices__table__container{
+  width: 650px;
+}
+.invoices__table__header{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 25px;
+}
+.invoice__container{
+  width: 800px;
+  height: 1000px;
+  background-image: url('../../assets/images/invoice.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.invoices__table__container .Table .Button{
+  padding: 0;
+  min-width: 40px;
+}

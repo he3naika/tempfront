@@ -1,0 +1,16 @@
+.site-info__table-wrapper{
+  width: 400px;
+  margin-bottom: 60px;
+  text-align: left;
+}
+.site-info__table-wrapper .Table{
+  width: 100%;
+}
+.site-info__table-wrapper__header{
+  font-size: 25px;
+  color: #ffffff;
+  padding-bottom: 40px;
+}
+.site-info__table-wrapper .Button{
+  margin-top: 30px;
+}

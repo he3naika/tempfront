@@ -1,0 +1,37 @@
+.login__form {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.login__form__label {
+  color: #ffffff;
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.login__form__label_error {
+  color: #ff8201;
+  text-align: left;
+  line-height: 25px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.login__form__label_error p {
+ margin:0;
+}
+
+.login__form_links{
+  margin-top: 40px;
+  margin-left: -20px;
+}
+
+.login__form .input {
+  margin-bottom: 50px;
+}
+
+.login__form__submit_button{
+  text-align: left;
+}

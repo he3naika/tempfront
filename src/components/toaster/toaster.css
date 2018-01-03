@@ -1,0 +1,70 @@
+.toaster{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  top: 20px;
+  left: 20px;
+  min-width: 250px;
+  max-width: 350px;
+  height: auto;
+  min-height: 40px;
+  background: #ed422f;
+  animation: toaster 0.3s linear;
+  animation-fill-mode: both;
+  animation-delay: 4s;
+  z-index: 9999;
+}
+
+.toaster__error-message{
+  width: 90%;
+  height: auto;
+  margin: auto;
+  color: #ffffff;
+  text-align: left;
+  vertical-align: middle;
+}
+.toaster__error-message:before{
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%
+}
+
+.toaster__progress-bar{
+  width: 110%;
+  height: 5px;
+  background: linear-gradient(to left, #c61c09 90%, white);
+  animation: progress 4s linear;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+  transform: translate(0, 5px);
+}
+
+.toaster:hover .toaster__progress-bar{
+  animation-play-state: paused;
+}
+
+.toaster:hover{
+  animation-play-state: paused;
+}
+
+@-webkit-keyframes progress {
+  from {
+    width: 100%;
+  }
+  to {
+    
+    width: 0;
+  }
+}
+
+@-webkit-keyframes toaster {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

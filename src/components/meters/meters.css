@@ -1,0 +1,44 @@
+.meters__table__container{
+  width: 680px;
+}
+
+.meters__table__header{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.meter__reading-add{
+  display: flex;
+  position: absolute;
+  left: 70px;
+  top: -32px;
+}
+
+.meter__reading_inputs :last-child{
+  margin-top: 10px;
+}
+
+.meter__reading-form{
+  position: relative;
+}
+
+.meter__reading-form_cancel,
+.meter__add:hover {
+  color: #ff871e;
+  cursor: pointer;
+}
+
+.meter__submit_button{
+  padding-left: 10px;
+}
+
+.meters__modal_confirmation{
+  width: 400px;
+  color: #ff871e;
+  font-size: 20px;
+  box-sizing: border-box;
+  margin: 30px 50px;
+}

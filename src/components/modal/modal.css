@@ -1,0 +1,51 @@
+.Modal__container :-webkit-scrollbar{
+  background: transparent;
+}
+.Modal__container{
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+}
+.Overlay{
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+}
+.Modal{
+  position: relative;
+  z-index: 3000;
+  min-width: 90px;
+  background: white;
+  overflow: hidden;
+  margin: auto;
+}
+.Btn_close{
+  width: 70px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  right: 35px;
+}
+.Modal__content{
+  padding: 30px 20px 10px;
+  margin: auto;
+}
+
+.Modal__content .Table{
+  width: 100%;
+}
+
+.scrollable{
+  max-height: 600px;
+  max-width: 1500px;
+  overflow: auto;
+}
